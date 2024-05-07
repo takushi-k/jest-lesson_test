@@ -2,6 +2,7 @@ import { delay } from "./async_func";
 
 it("delayが指定された時間後にメッセージを返す", async () => {
   const result = await delay("Hello Jest", 1000);
+  console.log(result)
   expect(result).toBe("Hello Jest");
 })
 
