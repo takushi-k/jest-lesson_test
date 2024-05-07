@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
+      - run: node -v
       - run: npm ci
       - run: npm run test -- --coverage
       # - run: npm run build
